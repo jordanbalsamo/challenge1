@@ -16,7 +16,6 @@ Requirements of the challenge:
 
 Output: git repo containing all work.
 
-
 ## Docker image tagging system 
 
 For this challenge, I've chosen to use a git commit hash based Docker image tagging approach.
@@ -34,3 +33,16 @@ This approach has a a couple of flaws, though:
 
 
 Ideally, I'd like to set this up with CI/CD pipelines (located in the pipelines directory at root of repo) such that on merge of a feature branch into 'master' or 'dev', the docker_build.sh script (or a more refined version) would be invoked and take the commit hash on merge and tag it as a point in time / version of the docker image.
+
+
+## Working with the Flask app locally
+
+In order to debug and run the flask app contained in the repo:
+
+```
+cd src/
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements.txt
+python3 server.py
+```
