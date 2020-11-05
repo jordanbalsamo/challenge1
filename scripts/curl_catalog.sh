@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # This script queries the private registry and pulls the latest tag name.
 # Requires jq - a simple JSON parsing utility.
