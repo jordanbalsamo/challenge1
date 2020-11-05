@@ -4,15 +4,15 @@
 # Assumes that registry is running: docker run -d -p 5000:5000 --restart=always --name registry registry:2
 
 if [ $# -eq 0 ]; then
-    echo "Please provide a image (-r) as a parameter to this script."
+    echo "Please provide an image (-i) as a parameter to this script."
     exit 1
 fi
 
-while getopts r:t: option
+while getopts i: option
 do
     case "${option}"
     in
-        r) IMG=${OPTARG};;
+        i) IMG=${OPTARG};;
     esac
 done
 
