@@ -10,7 +10,7 @@ resource "azurerm_app_service" "app_service" {
     WEBSITES_ENABLE_APP_SERVICE_STORAGE = false
 
     /*
-    # Settings for private Container Registires  
+    # Settings for private Container Registries  
     DOCKER_REGISTRY_SERVER_URL      = "" # Path to registry server...
     DOCKER_REGISTRY_SERVER_USERNAME = "" # Auth
     DOCKER_REGISTRY_SERVER_PASSWORD = "" # Auth
